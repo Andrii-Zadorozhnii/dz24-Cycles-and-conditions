@@ -93,9 +93,11 @@ if (buyPrice < 200) {
 
 // __________3__________
 
-let positiveNumbers = 0;
-let negativeNumbers = 0;
-let zeroNumbers = 0;
+let positiveNumbers;
+let negativeNumbers;
+let zeroNumbers;
+let evenNumbers;
+let oddNumbers;
 
 for (let i = 0; i < 10; i++) {
     let requestNumber = +prompt("Please enter number: ");
@@ -106,6 +108,13 @@ for (let i = 0; i < 10; i++) {
     //     case requestNumber < 0: negativeNumbers++;
     //     case requestNumber > 0: positiveNumbers++;
     // }
+    if (requestNumbe % 2 == 0) {
+        evenNumbers++;
+    }
+    comsole.log(evenNumbers);
+
+    oddNumbers = 10 - evenNumbers;
+    console.log(oddNumbers);
 
     if (requestNumber == 0) {
         zeroNumbers++;
@@ -115,7 +124,7 @@ for (let i = 0; i < 10; i++) {
         positiveNumbers++;
     }
 }
-alert(`Positive numbers: ${positiveNumbers}, negative numbers: ${negativeNumbers}, zero numbers: ${zeroNumbers}`);
+alert(`Positive numbers: ${positiveNumbers}, negative numbers: ${negativeNumbers}, zero numbers: ${zeroNumbers}, even numbers: ${evenNumbers}, odd numbers: ${oddNumbers}`);
 
 // __________4__________
 
