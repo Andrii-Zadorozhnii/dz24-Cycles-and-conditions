@@ -108,13 +108,11 @@ for (let i = 0; i < 10; i++) {
     //     case requestNumber < 0: negativeNumbers++;
     //     case requestNumber > 0: positiveNumbers++;
     // }
-    if (requestNumbe % 2 == 0) {
-        evenNumbers++;
-    }
-    comsole.log(evenNumbers);
+    // if (requestNumbe % 2 == 0) {
+    //     evenNumbers++;
+    // }
 
-    oddNumbers = 10 - evenNumbers;
-    console.log(oddNumbers);
+    // oddNumbers = 10 - evenNumbers;
 
     if (requestNumber == 0) {
         zeroNumbers++;
